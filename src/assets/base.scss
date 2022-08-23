@@ -1,0 +1,55 @@
+
+$colors: (
+    blue: #4286f4,
+    lightblue: #b8d1f9,
+    textDark: #303A39,
+    textGreen: #303A39,
+    textGray: #838D8E,
+    bgDark: #181818,
+    bgGreen: #5DA5A4,
+    bgLightGreen: #F0FAFB,
+);
+
+$font: (
+    main-family: sans-serif,    
+    weight-thin: 300,
+    weight-medium: 500,
+    weight-fat: 700,
+    base-size: 62.5%,
+    smaller-size: 50%
+);
+
+$breakpoints: (
+    small: 50em, 
+    medium: 76.8em, 
+    large: 102.4em, 
+    larger: 128em, 
+    extra-large: 144em
+);
+
+$sizes: (
+    header-height: 6rem
+);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: map-get($map: $colors, $key: textDark);
+  background: map-get($map: $colors , $key: bgLightGreen);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

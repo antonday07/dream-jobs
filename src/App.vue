@@ -13,11 +13,16 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <TheWelcome />
+   
   </main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+
+  body {
+    background-color: aqua;
+  }
 header {
   line-height: 1.5;
 }
